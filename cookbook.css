@@ -1,0 +1,125 @@
+:root {
+    --page-min-width: 30rem;
+    --kitchen-type-min-size: 20rem;
+    --background-color: #afa8a8;
+    ---footer-background-color: #797575;
+}
+
+body {
+    background-color: var(--background-color);
+    min-width: var(--page-min-width);
+    overflow-x: scroll;
+    margin: unset;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+a {
+    text-decoration: unset;
+    color: black;
+}
+
+h1, h2 {
+    margin-bottom: unset;
+}
+
+footer {
+    background-color: var(---footer-background-color);
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 4rem;
+}
+
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.navigation-container {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.banner-container {
+    margin-top: -2rem;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.about-us-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5rem;
+}
+
+.about-content {
+    width: 40%;
+    min-width: var(--page-min-width);
+}
+
+.kitchen-types-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5rem;
+}
+
+.kitchen-type {
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--kitchen-type-min-size);
+    min-width: var(--kitchen-type-min-size);
+}
+
+.kitchen-type-text {
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    display: none;
+}
+
+.kitchen-type:hover > .kitchen-type-text {
+    display: block;
+}
+
+.cursos-pointer-on-hover:hover {
+    cursor: pointer;
+}
+
+.transition-scale-bigger:hover {
+    transform: scale(110%);
+    transition: linear 100ms;
+}
+
+.footer-social-links-container {
+    display: grid;
+    grid-template-columns: 2rem 2rem;
+    gap: 1rem;
+}
